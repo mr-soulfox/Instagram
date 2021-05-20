@@ -1,0 +1,207 @@
+/*Import font "Robot"*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/*CSS reset*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif, Helvetica;
+}
+
+/*Add body default style*/
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+body > main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+/*Import scss modules*/
+.login-area {
+  width: 500px;
+}
+
+.continue-area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 35px;
+  background-color: #fff;
+  border: #d5d4d4 solid 3px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.continue-area > img {
+  width: 300px;
+}
+
+.continue-area .interaction-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.continue-area .interaction-area > img {
+  width: 130px;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+.continue-area .interaction-area #continue {
+  background-color: #0095f6;
+  padding: 7px;
+  border-radius: 6px;
+  color: #f8f8f2;
+  margin: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.continue-area .interaction-area #continue:hover {
+  cursor: pointer;
+  background-color: #069dff;
+}
+
+.continue-area .interaction-area #remove {
+  color: #0095f6;
+  font-weight: 700;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.continue-area .interaction-area #remove:hover {
+  cursor: pointer;
+  color: #2aabff;
+}
+
+.not-area {
+  width: 100%;
+  text-align: center;
+}
+
+.not-area .not {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border: #d5d4d4 solid 3px;
+  border-radius: 2px;
+}
+
+.not-area .not > span:nth-child(1) {
+  color: #0000007c;
+  margin: 5px;
+}
+
+.not-area .not > span span:nth-child(1) {
+  color: #0095f6;
+  font-weight: 700;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.not-area .not > span span:nth-child(1):hover {
+  cursor: pointer;
+  color: #2aabff;
+}
+
+.not-area .not > span span:nth-child(2) {
+  color: #0095f6;
+  font-weight: 700;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.not-area .not > span span:nth-child(2):hover {
+  cursor: pointer;
+  color: #2aabff;
+}
+
+.get-app-area span:nth-child(1) {
+  font-size: 1rem;
+}
+
+.get-app-area .install-links {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.get-app-area .install-links img {
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1159px) {
+  #phoneArea {
+    display: none;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 628px) {
+  .login-area .install-links img {
+    margin: 3px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 540px) {
+  .login-area .area {
+    background-color: #f5f5f5;
+    border: none;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

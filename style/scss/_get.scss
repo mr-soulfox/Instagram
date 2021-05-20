@@ -1,0 +1,17 @@
+.get-app-area {
+    & span:nth-child(1) {
+        font-size: 1rem;
+    }
+
+    .install-links {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+
+        & img {
+            width: 200px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    }
+}   

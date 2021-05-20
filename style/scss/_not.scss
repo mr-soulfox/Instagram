@@ -1,0 +1,42 @@
+.not-area {
+    width: 100%;
+    text-align: center;
+    
+    .not {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        border: lighten($color: #6f6e6e, $amount: 40) solid 3px;
+        border-radius: 2px;
+        
+        & > span:nth-child(1) {
+            color: #0000007c;
+            margin: 5px;
+        }
+
+        & > span span:nth-child(1) {
+            color: #0095f6;
+            font-weight: 700;
+            transition-duration: 0.2s;
+
+            &:hover {
+                cursor: pointer;
+                color: lighten($color: #0095f6, $amount: 10);
+            }
+        }
+
+        & > span span:nth-child(2) {
+            color: #0095f6;
+            font-weight: 700;
+            transition-duration: 0.2s;
+
+            &:hover {
+                cursor: pointer;
+                color: lighten($color: #0095f6, $amount: 10);
+            }
+        }
+    }
+}

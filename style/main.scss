@@ -1,0 +1,30 @@
+/*Import font "Robot"*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/*CSS reset*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif, Helvetica;
+}
+
+/*Add body default style*/
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+    
+    & > main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+}
+
+/*Import scss modules*/
+@import './scss/continue';
+@import './scss/not';
+@import './scss/get';
+@import './scss/querie';

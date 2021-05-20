@@ -1,0 +1,61 @@
+@mixin flex($dir, $align) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+}
+
+.login-area {
+    width: 500px;
+}
+
+.continue-area {
+    width: 100%;
+    @include flex(column, center);
+    text-align: center;
+    padding: 35px;
+    background-color: #fff;
+    border: lighten($color: #6f6e6e, $amount: 40) solid 3px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+
+    & > img {
+        width: 300px;
+    }
+
+    .interaction-area {
+        @include flex(column, center);
+
+        & > img {
+            width: 130px;
+            margin: 20px;
+            border-radius: 100%;
+        }
+
+        #continue {
+            background-color: #0095f6;
+            padding: 7px;
+            border-radius: 6px;
+            color: #f8f8f2;
+            margin: 5px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            transition-duration: 0.2s;
+            
+            &:hover {
+                cursor: pointer;
+                background-color: lighten($color: #0095f6, $amount: 3)
+            }
+        }
+
+        #remove {
+            color: #0095f6;
+            font-weight: 700;
+            transition-duration: 0.2s;
+
+            &:hover {
+                cursor: pointer;
+                color: lighten($color: #0095f6, $amount: 10)
+            }
+        }
+    }
+}
