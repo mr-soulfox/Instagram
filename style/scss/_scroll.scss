@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: darken($color: #f5f5f5, $amount: 10)
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lighten($color: #000, $amount: 60)
+}

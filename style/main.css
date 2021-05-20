@@ -30,6 +30,20 @@ body > main {
 }
 
 /*Import scss modules*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: gainsboro;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #999999;
+}
+
 .login-area {
   width: 500px;
 }
